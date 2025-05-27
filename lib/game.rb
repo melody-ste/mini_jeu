@@ -2,12 +2,12 @@
 
 class Game 
 
-  attr_accessor :name, :life_points
+  attr_accessor 
 
   def initialize
 
 
   end
 
-  
+
 end
