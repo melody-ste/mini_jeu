@@ -55,16 +55,17 @@ class HumanPlayer < Player
   end
 
   def search_weapon
-  new_weapon = rand(1..6)
+   new_weapon = rand(1..6)
 
-  puts " tu as trouvé une arme de niveau #{new_weapon}"
+   puts " tu as trouvé une arme de niveau #{new_weapon}"
   
-  if new_weapon > @weapon_level
-    @weapon_level = new_weapon
+    if new_weapon > @weapon_level
+      @weapon_level = new_weapon
 
-    puts "Youhou ! elle est meilleure que ton arme actuelle : tu la prends."
-  else 
-    puts "M@*#$... elle n'est pas mieux que ton arme actuelle..."
+      puts "Youhou ! elle est meilleure que ton arme actuelle : tu la prends."
+    else 
+     puts "M@*#$... elle n'est pas mieux que ton arme actuelle..."
+    end
 
   end
 
@@ -86,5 +87,6 @@ class HumanPlayer < Player
     end
 
   end
-
+  
 end
+
